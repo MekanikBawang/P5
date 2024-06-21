@@ -1,0 +1,473 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: lavender;
+  font-style: normal;
+}
+
+header {
+  text-align: center;
+  padding: 50px;
+  background-color: lightsteelblue;
+}
+nav {
+  background-color: darkslateblue;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  z-index: 11;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+nav ul li {
+  position: relative;
+}
+nav ul li a {
+  text-decoration: none;
+  display: block;
+  padding: 20px;
+  color: #ffffff;
+  transition: background-color 0.3s ease;
+}
+nav ul li a:hover {
+  background-color: lightblue;
+}
+nav ul li ul.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: darkslateblue;
+  padding: 0;
+  min-width: 150px;
+  z-index: 1000;
+}
+nav ul li ul.dropdown li {
+  border: none;
+}
+nav ul li ul.dropdown li a {
+  padding: 15px;
+  color: #ffffff;
+}
+nav ul li:hover ul.dropdown {
+  display: block;
+}
+
+.menu-toggle {
+  display: none; /* Tombol ini akan muncul hanya di layar kecil */
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 1.5rem;
+}
+
+/* Gaya untuk link navigasi aktif */
+nav ul li a.aktip {
+  font-weight: bold; /* Contoh: Teks tebal */
+  background-color: lightblue; /* Contoh: Warna teks lain untuk link aktif */
+}
+
+/* CONTAINER */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 3% 1%;
+}
+
+/* Scroll to top button */
+body.scroll-top #topButton {
+  display: block;
+}
+
+.heading1 {
+  text-align: center;
+}
+
+.pendahuluan {
+  margin: 5px 20px;
+}
+
+section {
+  border-radius: 5px;
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.4);
+  width: 69%;
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+article {
+  padding: 25px;
+}
+
+.imgart {
+  width: auto;
+  height: 250px;
+  border: 2px solid lightblue;
+  padding: 5px;
+}
+
+.day h2 {
+  margin: 10px 0;
+}
+
+#topButton {
+  display: none; /* Tombol tidak terlihat secara default */
+  position: fixed; /* Tetap di posisi saat digulir */
+  bottom: 68px; /* Jarak dari bawah */
+  right: 5px; /* Jarak dari kanan */
+  z-index: 99; /* Menempatkan di atas konten lain */
+  background-color: #007bff; /* Warna latar belakang */
+  color: white; /* Warna teks */
+  border: none; /* Tanpa batas */
+  border-radius: 5px; /* Bentuk bulat */
+  cursor: pointer; /* Kursor berubah saat diarahkan */
+  padding: 10px; /* Padding di dalam tombol */
+  font-size: 20px; /* Ukuran teks */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Efek bayangan */
+  width: 40px;
+}
+
+#topButton:hover {
+  background-color: #0056b3; /* Warna latar belakang saat dihover */
+}
+
+aside {
+  padding: 50px 40px;
+  text-align: center;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.4);
+  background-color: #ffffff;
+  width: 30%;
+  height: 100vh;
+}
+
+aside img {
+  align-items: center;
+  width: 50%;
+  border-radius: 100%;
+  border: 2px solid lightskyblue;
+  padding: 5px;
+}
+
+aside a {
+  text-decoration: none;
+}
+
+aside .anggota a {
+  background-color: #b6d0e2;
+  padding: 10px;
+}
+
+aside .anggota {
+  margin: 25px 0;
+}
+
+aside .anggota a:hover {
+  margin: 25px 0;
+  border: 1px solid #000000;
+  background-color: #b6d099;
+}
+
+aside .container3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1200px; /* Atur lebar maksimum container sesuai kebutuhan */
+  padding: 20px;
+}
+
+/* jum gambar coeg */
+
+/* Gaya untuk tata letak kartu */
+.containernye {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Jarak antara kartu */
+  margin-top: 20px;
+}
+
+.kartu {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 20px;
+  max-width: 300px;
+  flex: 1 1 calc(33.333% - 20px);
+  box-sizing: border-box;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+}
+
+.kartu:hover {
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
+  transform: scale(1.01);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.4);
+}
+
+.kartu a {
+  text-decoration: none;
+  background-color: #6495ed;
+  padding: 5px;
+  border-radius: 5px;
+  color: #000;
+}
+
+.kartu a:hover {
+  background-color: #89cff0;
+}
+
+img.memberr {
+  border: 6px solid #a7c7e7;
+  border-radius: 100%;
+  width: 150px;
+  height: 150px;
+  margin: 5px;
+  padding: 5px;
+}
+
+.memberr {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.kata2 {
+  margin-top: 15px;
+}
+
+.kartu {
+  position: relative;
+  display: inline-block;
+  width: 300px;
+  margin: 10px;
+}
+
+
+.kartu img:hover {
+  transform: scale(1.05);
+}
+
+/* Styles for zoomed image within kartu */
+.zoom-container {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 8;
+}
+
+.zoom-container img {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.zoom-container .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Overlay styles for zoom effect */
+.overlay {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.overlay img {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.blog-post {
+  width: calc(
+    33.33% - 20px
+  ); /* Lebar setiap kolom, dihitung dengan menggunakan calc() untuk menghindari margin tepi */
+  margin-bottom: 5%;
+  background-color: #f0f0f0;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Efek bayangan untuk memisahkan setiap artikel */
+  transition: transform 0.5s ease, box-shadow 0.3s ease; /* Efek transisi bayangan saat hover */
+  border-radius: 5px;
+}
+
+.blog-post:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Efek bayangan lebih kuat saat hover */
+  transform: scale(1.02); /* Menggunakan scale untuk efek zoom */
+}
+
+.post-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.post-category {
+  color: #666;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.title {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.title a {
+  text-decoration: none;
+  color: #333;
+}
+
+.title a:hover {
+  color: lightskyblue;
+}
+
+.post-author-info {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.post-author-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.post-meta {
+  font-size: 14px;
+  color: #888;
+}
+
+@media (max-width: 768px) {
+  header {
+    font-size: 8px;
+  }
+
+  #topButton {
+    right: 1px;
+    padding: 5px;
+    width: 40px;
+    bottom: 40px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+    position: absolute;
+    top: 25px; /* Sesuaikan dengan tinggi header Anda */
+    left: 0;
+    width: 100%;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.4);
+    background-color: lightskyblue;
+    padding: 10px 0;
+    display: none; /* Menu akan disembunyikan secara default */
+  }
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  section {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  aside {
+    width: 90%;
+    margin-top: 20px;
+    padding: 20px;
+  }
+
+  ul.open {
+    display: flex; /* Menu muncul saat kelas 'open' ditambahkan */
+  }
+
+  .menu-toggle {
+    display: inline-block; /* Tampilkan tombol toggle di layar kecil */
+    background-color: #0056b3;
+    width: 100%;
+    position: sticky;
+    z-index: 7;
+    top: 24%;
+  }
+
+  .kartu {
+    flex: 1 1 calc(10% - 20px);
+    text-align: center;
+  }
+
+  .bngsat {
+    text-align: center;
+  }
+
+  .blog-post {
+    width: calc(
+      80.33% - 20px
+    ); /* Lebar setiap kolom, dihitung dengan menggunakan calc() untuk menghindari margin tepi */
+    margin: 0 0 5px 0;
+  }
+
+  footer {
+    padding: 10px;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .kartu {
+    flex: 1 1 100%;
+  }
+}
