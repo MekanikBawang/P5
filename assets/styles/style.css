@@ -425,6 +425,13 @@ footer {
     width: 90%;
     margin-bottom: 20px;
   }
+
+  .kecilintod {
+    text-align: center;
+    width: 30%;
+    height: 30%;
+  }
+  
   aside {
     width: 90%;
     margin-top: 20px;
