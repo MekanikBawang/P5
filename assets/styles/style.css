@@ -417,6 +417,19 @@ footer {
     padding: 10px 0;
     display: none; /* Menu akan disembunyikan secara default */
   }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+  nav ul.show {
+    display: flex;
+  }
+  .menu-toggle {
+    display: block;
+  }
+  
   .container {
     flex-direction: column;
     align-items: center;
