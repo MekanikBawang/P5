@@ -115,7 +115,7 @@ article {
 
 .imgart {
   width: 400px;
-  height: 400px;
+  height: auto;
   border: 2px solid lightblue;
   padding: 5px;
 }
@@ -442,7 +442,7 @@ footer {
   .kecilintod {
     text-align: center;
     width: 100%;
-    height: 30%;
+    height: auto;
   }
   
   aside {
