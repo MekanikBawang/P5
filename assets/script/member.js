@@ -19,6 +19,9 @@ function scrollFunction() {
 }
 
 // Event listener untuk klik tombol toggle
+const menuToggle = document.querySelector('.menu-toggle');
+const navUl = document.querySelector('nav ul');
+
 menuToggle.addEventListener('click', function() {
     navUl.classList.toggle('open');
 });
