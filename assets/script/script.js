@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     Swal.fire({
         title: 'Selamat Datang Di Web/Blogger Kami &#128527;&#128075;',
-        text: 'Maap baru 1 postingan blog :v',
+        text: 'KAPAN PULANGGG?!?!?!?!!',
         icon: 'info',
         confirmButtonText: 'Ok Bre&nbsp;&#128076; '
     }).then((result) => {
