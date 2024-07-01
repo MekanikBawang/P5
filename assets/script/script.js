@@ -33,3 +33,7 @@ menuToggle.addEventListener('click', function() {
     navUl.classList.toggle('open');
 });
 
+function hrefnye() {
+    window.location.href = "https://github.com/MekanikBawang";
+}
+
