@@ -349,6 +349,14 @@ footer {
   transform: scale(1.02); /* Menggunakan scale untuk efek zoom */
 }
 
+.pototextauthor {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
 .post-img img {
   width: 100%;
   height: auto;
