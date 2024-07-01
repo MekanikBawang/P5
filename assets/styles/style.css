@@ -375,6 +375,7 @@ footer {
   color: #666;
   font-size: 14px;
   margin-top: 10px;
+  cursor: text;
 }
 
 .title {
