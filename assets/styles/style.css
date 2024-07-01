@@ -352,6 +352,7 @@ footer {
 
 #cursor {
   cursor: pointer;
+  padding: 0;
 }
 
 #pototextauthor {
