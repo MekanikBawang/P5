@@ -37,3 +37,7 @@ function hrefnye() {
     window.location.href = "https://github.com/MekanikBawang";
 }
 
+function blgPost() {
+    window.location.href = "p5-APB.html";
+}
+
