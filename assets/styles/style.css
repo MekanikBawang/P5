@@ -350,7 +350,7 @@ footer {
   transform: scale(1.02); /* Menggunakan scale untuk efek zoom */
 }
 
-section.cursor {
+section .cursor {
   cursor: pointer;
   padding: 0;
   margin: 0;
